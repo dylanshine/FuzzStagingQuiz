@@ -8,6 +8,8 @@
 
 #import "FuzzDataManager.h"
 #import <AFNetworking.h>
+#import "FuzzImageData.h"
+#import "FuzzTextData.h"
 
 @interface FuzzDataManager ()
 @property (nonatomic, strong) NSMutableArray *data;
@@ -36,10 +38,23 @@
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     [manager GET:urlString parameters:nil
          success:^(AFHTTPRequestOperation *operation, id responseObject) {
+             [self createFuzzDataObjects:responseObject];
              block();
          } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
              NSLog(@"Error: %@", error);
          }];
+}
+
+-(void)createFuzzDataObjects:(NSArray *)responseData {
+    for (NSDictionary *dataDict in responseData) {
+        if ([dataDict[@"type"] isEqualToString:@"image"]) {
+            FuzzImageData *fuzzImage = [[FuzzImageData alloc] initWithDictionary:dataDict];
+            [self.data addObject:fuzzImage];
+        } else {
+            FuzzTextData *fuzzText = [[FuzzTextData alloc] initWithDictionary:dataDict];
+            [self.data addObject:fuzzText];
+        }
+    }
 }
 
 @end
