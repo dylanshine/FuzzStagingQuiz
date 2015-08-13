@@ -57,4 +57,26 @@
     }
 }
 
+#pragma mark - Data Filtering
+
+-(NSArray *)imageData {
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:
+                              @"self isKindOfClass: %@",
+                              [FuzzImageData class]];
+    
+    return [self.data filteredArrayUsingPredicate:predicate];
+}
+
+-(NSArray *)textData {
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:
+                              @"self isKindOfClass: %@",
+                              [FuzzTextData class]];
+    
+    return [self.data filteredArrayUsingPredicate:predicate];
+}
+
+-(NSArray *)allData {
+    return [self.data copy];
+}
+
 @end

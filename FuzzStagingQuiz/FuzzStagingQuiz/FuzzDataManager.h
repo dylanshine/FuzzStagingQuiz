@@ -11,4 +11,7 @@
 @interface FuzzDataManager : NSObject
 +(instancetype)sharedManager;
 -(void)fetchFuzzData:(NSString *)urlString completion:(void (^)())block;
+-(NSArray *)imageData;
+-(NSArray *)textData;
+-(NSArray *)allData;
 @end
