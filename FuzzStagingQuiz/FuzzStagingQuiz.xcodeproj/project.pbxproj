@@ -16,6 +16,7 @@
 		FC688F681B7D4942003B46A9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC688F661B7D4942003B46A9 /* LaunchScreen.xib */; };
 		FC688F741B7D4942003B46A9 /* FuzzStagingQuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F731B7D4942003B46A9 /* FuzzStagingQuizTests.m */; };
 		FC688F7F1B7D4AB0003B46A9 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F7E1B7D4AB0003B46A9 /* Constants.m */; };
+		FC688F821B7D4BA9003B46A9 /* FuzzDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F811B7D4BA9003B46A9 /* FuzzDataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		FC688F731B7D4942003B46A9 /* FuzzStagingQuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FuzzStagingQuizTests.m; sourceTree = "<group>"; };
 		FC688F7D1B7D4AB0003B46A9 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		FC688F7E1B7D4AB0003B46A9 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		FC688F801B7D4BA9003B46A9 /* FuzzDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuzzDataManager.h; sourceTree = "<group>"; };
+		FC688F811B7D4BA9003B46A9 /* FuzzDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuzzDataManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 				FC688F641B7D4942003B46A9 /* Images.xcassets */,
 				FC688F661B7D4942003B46A9 /* LaunchScreen.xib */,
 				FC688F571B7D4942003B46A9 /* Supporting Files */,
+				FC688F801B7D4BA9003B46A9 /* FuzzDataManager.h */,
+				FC688F811B7D4BA9003B46A9 /* FuzzDataManager.m */,
 			);
 			path = FuzzStagingQuiz;
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 			files = (
 				FC688F601B7D4942003B46A9 /* ViewController.m in Sources */,
 				FC688F5D1B7D4942003B46A9 /* AppDelegate.m in Sources */,
+				FC688F821B7D4BA9003B46A9 /* FuzzDataManager.m in Sources */,
 				FC688F5A1B7D4942003B46A9 /* main.m in Sources */,
 				FC688F7F1B7D4AB0003B46A9 /* Constants.m in Sources */,
 			);
