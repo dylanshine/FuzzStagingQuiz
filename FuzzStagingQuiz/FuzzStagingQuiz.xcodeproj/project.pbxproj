@@ -15,6 +15,7 @@
 		FC688F651B7D4942003B46A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC688F641B7D4942003B46A9 /* Images.xcassets */; };
 		FC688F681B7D4942003B46A9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC688F661B7D4942003B46A9 /* LaunchScreen.xib */; };
 		FC688F741B7D4942003B46A9 /* FuzzStagingQuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F731B7D4942003B46A9 /* FuzzStagingQuizTests.m */; };
+		FC688F7F1B7D4AB0003B46A9 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F7E1B7D4AB0003B46A9 /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		FC688F6D1B7D4942003B46A9 /* FuzzStagingQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuzzStagingQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC688F721B7D4942003B46A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC688F731B7D4942003B46A9 /* FuzzStagingQuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FuzzStagingQuizTests.m; sourceTree = "<group>"; };
+		FC688F7D1B7D4AB0003B46A9 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		FC688F7E1B7D4AB0003B46A9 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 			children = (
 				FC688F581B7D4942003B46A9 /* Info.plist */,
 				FC688F591B7D4942003B46A9 /* main.m */,
+				FC688F7D1B7D4AB0003B46A9 /* Constants.h */,
+				FC688F7E1B7D4AB0003B46A9 /* Constants.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 				FC688F601B7D4942003B46A9 /* ViewController.m in Sources */,
 				FC688F5D1B7D4942003B46A9 /* AppDelegate.m in Sources */,
 				FC688F5A1B7D4942003B46A9 /* main.m in Sources */,
+				FC688F7F1B7D4AB0003B46A9 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
