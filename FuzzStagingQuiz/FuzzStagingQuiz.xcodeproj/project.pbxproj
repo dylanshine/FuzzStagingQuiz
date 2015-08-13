@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2633BADF3DE27A103298C10 /* libPods-FuzzStagingQuiz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E68B6918BF2B2C2FF6288097 /* libPods-FuzzStagingQuiz.a */; };
 		FC688F5A1B7D4942003B46A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F591B7D4942003B46A9 /* main.m */; };
 		FC688F5D1B7D4942003B46A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F5C1B7D4942003B46A9 /* AppDelegate.m */; };
 		FC688F601B7D4942003B46A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F5F1B7D4942003B46A9 /* ViewController.m */; };
@@ -27,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		89C427A3F71EFC63FFE0F5CE /* Pods-FuzzStagingQuiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuzzStagingQuiz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuzzStagingQuiz/Pods-FuzzStagingQuiz.debug.xcconfig"; sourceTree = "<group>"; };
+		D533E64DF41C23B464E08E3B /* Pods-FuzzStagingQuiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuzzStagingQuiz.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuzzStagingQuiz/Pods-FuzzStagingQuiz.release.xcconfig"; sourceTree = "<group>"; };
+		E68B6918BF2B2C2FF6288097 /* libPods-FuzzStagingQuiz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FuzzStagingQuiz.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC688F541B7D4942003B46A9 /* FuzzStagingQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuzzStagingQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC688F581B7D4942003B46A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC688F591B7D4942003B46A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2633BADF3DE27A103298C10 /* libPods-FuzzStagingQuiz.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +65,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13641E8AEFDF158CFFCBB216 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89C427A3F71EFC63FFE0F5CE /* Pods-FuzzStagingQuiz.debug.xcconfig */,
+				D533E64DF41C23B464E08E3B /* Pods-FuzzStagingQuiz.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3FFDCC92CDF5D3B4A49BA4F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E68B6918BF2B2C2FF6288097 /* libPods-FuzzStagingQuiz.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FC688F4B1B7D4942003B46A9 = {
 			isa = PBXGroup;
 			children = (
 				FC688F561B7D4942003B46A9 /* FuzzStagingQuiz */,
 				FC688F701B7D4942003B46A9 /* FuzzStagingQuizTests */,
 				FC688F551B7D4942003B46A9 /* Products */,
+				13641E8AEFDF158CFFCBB216 /* Pods */,
+				3FFDCC92CDF5D3B4A49BA4F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC688F771B7D4942003B46A9 /* Build configuration list for PBXNativeTarget "FuzzStagingQuiz" */;
 			buildPhases = (
+				88ADBD3369138672DAEECD12 /* Check Pods Manifest.lock */,
 				FC688F501B7D4942003B46A9 /* Sources */,
 				FC688F511B7D4942003B46A9 /* Frameworks */,
 				FC688F521B7D4942003B46A9 /* Resources */,
+				1A056EA8A3BDA9654859E06D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A056EA8A3BDA9654859E06D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FuzzStagingQuiz/Pods-FuzzStagingQuiz-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88ADBD3369138672DAEECD12 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FC688F501B7D4942003B46A9 /* Sources */ = {
@@ -345,6 +404,7 @@
 		};
 		FC688F781B7D4942003B46A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C427A3F71EFC63FFE0F5CE /* Pods-FuzzStagingQuiz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FuzzStagingQuiz/Info.plist;
@@ -355,6 +415,7 @@
 		};
 		FC688F791B7D4942003B46A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D533E64DF41C23B464E08E3B /* Pods-FuzzStagingQuiz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FuzzStagingQuiz/Info.plist;
@@ -416,6 +477,7 @@
 				FC688F791B7D4942003B46A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC688F7A1B7D4942003B46A9 /* Build configuration list for PBXNativeTarget "FuzzStagingQuizTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +486,7 @@
 				FC688F7C1B7D4942003B46A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
