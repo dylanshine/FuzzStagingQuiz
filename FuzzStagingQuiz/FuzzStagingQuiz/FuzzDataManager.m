@@ -7,6 +7,7 @@
 //
 
 #import "FuzzDataManager.h"
+#import <AFNetworking.h>
 
 @implementation FuzzDataManager
 
@@ -17,6 +18,17 @@
         _sharedManager = [[self alloc] init];
     });
     return _sharedManager;
+}
+
+-(void)fetchFuzzData:(NSString *)urlString completion:(void (^)())block {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    [manager GET:urlString parameters:nil
+         success:^(AFHTTPRequestOperation *operation, id responseObject) {
+             block();
+         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+             NSLog(@"Error: %@", error);
+         }];
 }
 
 @end
