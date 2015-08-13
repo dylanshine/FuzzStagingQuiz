@@ -54,6 +54,39 @@
                                             <outlet property="fuzzImageView" destination="EYp-1d-gHu" id="7oV-QC-vUJ"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="textCell" rowHeight="57" id="2sh-dx-wqU" customClass="TextTableViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2sh-dx-wqU" id="dCO-S8-j1R">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUj-bE-c5T">
+                                                    <rect key="frame" x="8" y="8" width="584" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="02/02/2002" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sod-ux-gyb">
+                                                    <rect key="frame" x="504" y="28" width="88" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wUj-bE-c5T" firstAttribute="trailing" secondItem="dCO-S8-j1R" secondAttribute="trailingMargin" id="3es-N7-JcM"/>
+                                                <constraint firstItem="sod-ux-gyb" firstAttribute="bottom" secondItem="dCO-S8-j1R" secondAttribute="bottomMargin" id="7Lt-81-b49"/>
+                                                <constraint firstItem="sod-ux-gyb" firstAttribute="trailing" secondItem="dCO-S8-j1R" secondAttribute="trailingMargin" id="Ne3-e7-jun"/>
+                                                <constraint firstItem="wUj-bE-c5T" firstAttribute="leading" secondItem="dCO-S8-j1R" secondAttribute="leadingMargin" id="RKT-V2-6JB"/>
+                                                <constraint firstItem="sod-ux-gyb" firstAttribute="top" secondItem="wUj-bE-c5T" secondAttribute="bottom" constant="-1" id="aou-nW-fgA"/>
+                                                <constraint firstItem="wUj-bE-c5T" firstAttribute="top" secondItem="dCO-S8-j1R" secondAttribute="topMargin" id="kgT-2N-BIC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="sod-ux-gyb" id="ZcC-R7-JXh"/>
+                                            <outlet property="fuzzTextLabel" destination="wUj-bE-c5T" id="Qo9-MR-yFA"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SbO-B3-z8C">

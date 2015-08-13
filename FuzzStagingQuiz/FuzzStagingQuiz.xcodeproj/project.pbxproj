@@ -21,6 +21,7 @@
 		FC688F8D1B7D50DF003B46A9 /* FuzzImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F8C1B7D50DF003B46A9 /* FuzzImageData.m */; };
 		FC688F901B7D5118003B46A9 /* FuzzTextData.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F8F1B7D5118003B46A9 /* FuzzTextData.m */; };
 		FC688F941B7D5BC3003B46A9 /* ImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F931B7D5BC3003B46A9 /* ImageTableViewCell.m */; };
+		FC688F971B7D5E49003B46A9 /* TextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F961B7D5E49003B46A9 /* TextTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		FC688F8F1B7D5118003B46A9 /* FuzzTextData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuzzTextData.m; sourceTree = "<group>"; };
 		FC688F921B7D5BC3003B46A9 /* ImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTableViewCell.h; sourceTree = "<group>"; };
 		FC688F931B7D5BC3003B46A9 /* ImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTableViewCell.m; sourceTree = "<group>"; };
+		FC688F951B7D5E49003B46A9 /* TextTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextTableViewCell.h; sourceTree = "<group>"; };
+		FC688F961B7D5E49003B46A9 /* TextTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +188,8 @@
 			children = (
 				FC688F921B7D5BC3003B46A9 /* ImageTableViewCell.h */,
 				FC688F931B7D5BC3003B46A9 /* ImageTableViewCell.m */,
+				FC688F951B7D5E49003B46A9 /* TextTableViewCell.h */,
+				FC688F961B7D5E49003B46A9 /* TextTableViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -326,6 +331,7 @@
 			files = (
 				FC688F601B7D4942003B46A9 /* ViewController.m in Sources */,
 				FC688F5D1B7D4942003B46A9 /* AppDelegate.m in Sources */,
+				FC688F971B7D5E49003B46A9 /* TextTableViewCell.m in Sources */,
 				FC688F821B7D4BA9003B46A9 /* FuzzDataManager.m in Sources */,
 				FC688F8D1B7D50DF003B46A9 /* FuzzImageData.m in Sources */,
 				FC688F941B7D5BC3003B46A9 /* ImageTableViewCell.m in Sources */,
