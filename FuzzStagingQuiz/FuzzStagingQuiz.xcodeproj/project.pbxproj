@@ -20,6 +20,7 @@
 		FC688F851B7D4F87003B46A9 /* FuzzData.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F841B7D4F87003B46A9 /* FuzzData.m */; };
 		FC688F8D1B7D50DF003B46A9 /* FuzzImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F8C1B7D50DF003B46A9 /* FuzzImageData.m */; };
 		FC688F901B7D5118003B46A9 /* FuzzTextData.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F8F1B7D5118003B46A9 /* FuzzTextData.m */; };
+		FC688F941B7D5BC3003B46A9 /* ImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F931B7D5BC3003B46A9 /* ImageTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		FC688F8C1B7D50DF003B46A9 /* FuzzImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuzzImageData.m; sourceTree = "<group>"; };
 		FC688F8E1B7D5118003B46A9 /* FuzzTextData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuzzTextData.h; sourceTree = "<group>"; };
 		FC688F8F1B7D5118003B46A9 /* FuzzTextData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuzzTextData.m; sourceTree = "<group>"; };
+		FC688F921B7D5BC3003B46A9 /* ImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTableViewCell.h; sourceTree = "<group>"; };
+		FC688F931B7D5BC3003B46A9 /* ImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				FC688F871B7D4F92003B46A9 /* Models */,
+				FC688F911B7D5BA0003B46A9 /* Views */,
 				FC688F5B1B7D4942003B46A9 /* AppDelegate.h */,
 				FC688F5C1B7D4942003B46A9 /* AppDelegate.m */,
 				FC688F5E1B7D4942003B46A9 /* ViewController.h */,
@@ -174,6 +178,15 @@
 				FC688F8F1B7D5118003B46A9 /* FuzzTextData.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		FC688F911B7D5BA0003B46A9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FC688F921B7D5BC3003B46A9 /* ImageTableViewCell.h */,
+				FC688F931B7D5BC3003B46A9 /* ImageTableViewCell.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +328,7 @@
 				FC688F5D1B7D4942003B46A9 /* AppDelegate.m in Sources */,
 				FC688F821B7D4BA9003B46A9 /* FuzzDataManager.m in Sources */,
 				FC688F8D1B7D50DF003B46A9 /* FuzzImageData.m in Sources */,
+				FC688F941B7D5BC3003B46A9 /* ImageTableViewCell.m in Sources */,
 				FC688F5A1B7D4942003B46A9 /* main.m in Sources */,
 				FC688F851B7D4F87003B46A9 /* FuzzData.m in Sources */,
 				FC688F7F1B7D4AB0003B46A9 /* Constants.m in Sources */,
