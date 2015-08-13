@@ -39,6 +39,9 @@
                                     <segment title="Images"/>
                                     <segment title="Text"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentedControlTapped:" destination="vXZ-lx-hvc" eventType="valueChanged" id="5yT-9c-SKa"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -51,6 +54,10 @@
                             <constraint firstItem="nPY-gR-NFm" firstAttribute="top" secondItem="SbO-B3-z8C" secondAttribute="bottom" constant="23" id="wgB-jF-Dps"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="segmentedControl" destination="SbO-B3-z8C" id="3s5-qE-u9r"/>
+                        <outlet property="tableView" destination="nPY-gR-NFm" id="pXO-i2-q0c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
