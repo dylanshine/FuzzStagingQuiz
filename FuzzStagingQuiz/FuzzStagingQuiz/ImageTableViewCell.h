@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FuzzImageData.h"
 
 @interface ImageTableViewCell : UITableViewCell
-
+@property (nonatomic, strong) FuzzImageData *imageData;
 @end

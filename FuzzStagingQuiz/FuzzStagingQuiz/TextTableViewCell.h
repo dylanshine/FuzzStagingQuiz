@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FuzzTextData.h"
 
 @interface TextTableViewCell : UITableViewCell
-
+@property (nonatomic, strong) FuzzTextData *textData;
 @end
