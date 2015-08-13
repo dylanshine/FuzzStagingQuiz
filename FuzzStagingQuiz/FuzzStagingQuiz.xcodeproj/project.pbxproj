@@ -17,6 +17,9 @@
 		FC688F741B7D4942003B46A9 /* FuzzStagingQuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F731B7D4942003B46A9 /* FuzzStagingQuizTests.m */; };
 		FC688F7F1B7D4AB0003B46A9 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F7E1B7D4AB0003B46A9 /* Constants.m */; };
 		FC688F821B7D4BA9003B46A9 /* FuzzDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F811B7D4BA9003B46A9 /* FuzzDataManager.m */; };
+		FC688F851B7D4F87003B46A9 /* FuzzData.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F841B7D4F87003B46A9 /* FuzzData.m */; };
+		FC688F8D1B7D50DF003B46A9 /* FuzzImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F8C1B7D50DF003B46A9 /* FuzzImageData.m */; };
+		FC688F901B7D5118003B46A9 /* FuzzTextData.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F8F1B7D5118003B46A9 /* FuzzTextData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,12 @@
 		FC688F7E1B7D4AB0003B46A9 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		FC688F801B7D4BA9003B46A9 /* FuzzDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuzzDataManager.h; sourceTree = "<group>"; };
 		FC688F811B7D4BA9003B46A9 /* FuzzDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuzzDataManager.m; sourceTree = "<group>"; };
+		FC688F831B7D4F87003B46A9 /* FuzzData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuzzData.h; sourceTree = "<group>"; };
+		FC688F841B7D4F87003B46A9 /* FuzzData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuzzData.m; sourceTree = "<group>"; };
+		FC688F8B1B7D50DF003B46A9 /* FuzzImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuzzImageData.h; sourceTree = "<group>"; };
+		FC688F8C1B7D50DF003B46A9 /* FuzzImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuzzImageData.m; sourceTree = "<group>"; };
+		FC688F8E1B7D5118003B46A9 /* FuzzTextData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuzzTextData.h; sourceTree = "<group>"; };
+		FC688F8F1B7D5118003B46A9 /* FuzzTextData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuzzTextData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +120,7 @@
 		FC688F561B7D4942003B46A9 /* FuzzStagingQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				FC688F871B7D4F92003B46A9 /* Models */,
 				FC688F5B1B7D4942003B46A9 /* AppDelegate.h */,
 				FC688F5C1B7D4942003B46A9 /* AppDelegate.m */,
 				FC688F5E1B7D4942003B46A9 /* ViewController.h */,
@@ -151,6 +161,19 @@
 				FC688F721B7D4942003B46A9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC688F871B7D4F92003B46A9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FC688F831B7D4F87003B46A9 /* FuzzData.h */,
+				FC688F841B7D4F87003B46A9 /* FuzzData.m */,
+				FC688F8B1B7D50DF003B46A9 /* FuzzImageData.h */,
+				FC688F8C1B7D50DF003B46A9 /* FuzzImageData.m */,
+				FC688F8E1B7D5118003B46A9 /* FuzzTextData.h */,
+				FC688F8F1B7D5118003B46A9 /* FuzzTextData.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,8 +314,11 @@
 				FC688F601B7D4942003B46A9 /* ViewController.m in Sources */,
 				FC688F5D1B7D4942003B46A9 /* AppDelegate.m in Sources */,
 				FC688F821B7D4BA9003B46A9 /* FuzzDataManager.m in Sources */,
+				FC688F8D1B7D50DF003B46A9 /* FuzzImageData.m in Sources */,
 				FC688F5A1B7D4942003B46A9 /* main.m in Sources */,
+				FC688F851B7D4F87003B46A9 /* FuzzData.m in Sources */,
 				FC688F7F1B7D4AB0003B46A9 /* Constants.m in Sources */,
+				FC688F901B7D5118003B46A9 /* FuzzTextData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
