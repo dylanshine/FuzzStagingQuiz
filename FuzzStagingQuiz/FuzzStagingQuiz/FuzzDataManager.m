@@ -9,6 +9,10 @@
 #import "FuzzDataManager.h"
 #import <AFNetworking.h>
 
+@interface FuzzDataManager ()
+@property (nonatomic, strong) NSMutableArray *data;
+@end
+
 @implementation FuzzDataManager
 
 +(instancetype)sharedManager {
@@ -18,6 +22,13 @@
         _sharedManager = [[self alloc] init];
     });
     return _sharedManager;
+}
+
+-(instancetype)init {
+    if (self = [super init]) {
+        _data = [[NSMutableArray alloc] init];
+    }
+    return self;
 }
 
 -(void)fetchFuzzData:(NSString *)urlString completion:(void (^)())block {
