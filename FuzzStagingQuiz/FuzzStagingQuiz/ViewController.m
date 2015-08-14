@@ -88,10 +88,12 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if ([self.displayedData[indexPath.row]isKindOfClass:[FuzzImageData class]]) {
         [self performSegueWithIdentifier:@"imageSegue" sender:self];
+    } else {
+        [self performSegueWithIdentifier:@"webSegue" sender:self];
     }
 }
 
-#pragma mark - Prepare for seque
+#pragma mark - Prepare for Segue
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"imageSegue"]) {

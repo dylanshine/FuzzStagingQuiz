@@ -125,6 +125,7 @@
                         <outlet property="segmentedControl" destination="SbO-B3-z8C" id="3s5-qE-u9r"/>
                         <outlet property="tableView" destination="nPY-gR-NFm" id="pXO-i2-q0c"/>
                         <segue destination="fBL-hm-Sog" kind="presentation" identifier="imageSegue" modalTransitionStyle="crossDissolve" id="FkR-ZU-Y5N"/>
+                        <segue destination="TII-m3-qTA" kind="presentation" identifier="webSegue" id="r6P-hl-jNp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -168,6 +169,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tKh-bq-Gtg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1357" y="286"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="ulT-XV-OYw">
+            <objects>
+                <viewController id="TII-m3-qTA" customClass="WebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pqp-Qi-c6r"/>
+                        <viewControllerLayoutGuide type="bottom" id="w4f-HP-OIQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5UT-Tv-vdZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Yt-GX-mRu">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Fuzz Productions" id="uYB-GM-vfV">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="stop" id="2MB-nK-P94">
+                                            <connections>
+                                                <action selector="dismissButtonPressed:" destination="TII-m3-qTA" id="4aL-bm-STE"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5a2-0r-u8S">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5a2-0r-u8S" firstAttribute="leading" secondItem="5UT-Tv-vdZ" secondAttribute="leadingMargin" constant="-16" id="5LB-NN-BNO"/>
+                            <constraint firstItem="5a2-0r-u8S" firstAttribute="top" secondItem="7Yt-GX-mRu" secondAttribute="bottom" id="EWM-g4-0GU"/>
+                            <constraint firstItem="w4f-HP-OIQ" firstAttribute="top" secondItem="5a2-0r-u8S" secondAttribute="bottom" id="Pf0-ak-Hoa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7Yt-GX-mRu" secondAttribute="trailing" constant="-16" id="gEW-Gn-8c8"/>
+                            <constraint firstItem="7Yt-GX-mRu" firstAttribute="leading" secondItem="5UT-Tv-vdZ" secondAttribute="leadingMargin" constant="-16" id="iaa-bd-FzA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5a2-0r-u8S" secondAttribute="trailing" constant="-16" id="oAX-N8-smc"/>
+                            <constraint firstItem="7Yt-GX-mRu" firstAttribute="top" secondItem="5UT-Tv-vdZ" secondAttribute="topMargin" id="voG-Rl-2nT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="5a2-0r-u8S" id="tfs-eW-zaU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k0P-np-sAP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1357" y="936"/>
         </scene>
     </scenes>
 </document>
