@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Dylan Shine. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "FuzzDataViewController.h"
 #import "Constants.h"
 #import "FuzzDataManager.h"
 #import "ImageTableViewCell.h"
@@ -15,14 +15,14 @@
 #import "FuzzTextData.h"
 #import "ImageViewController.h"
 
-@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface FuzzDataViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) FuzzDataManager *fuzzDataManager;
 @property (nonatomic, strong) NSArray *displayedData;
 @end
 
-@implementation ViewController
+@implementation FuzzDataViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

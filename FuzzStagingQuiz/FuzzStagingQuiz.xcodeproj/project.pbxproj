@@ -10,7 +10,7 @@
 		D2633BADF3DE27A103298C10 /* libPods-FuzzStagingQuiz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E68B6918BF2B2C2FF6288097 /* libPods-FuzzStagingQuiz.a */; };
 		FC688F5A1B7D4942003B46A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F591B7D4942003B46A9 /* main.m */; };
 		FC688F5D1B7D4942003B46A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F5C1B7D4942003B46A9 /* AppDelegate.m */; };
-		FC688F601B7D4942003B46A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F5F1B7D4942003B46A9 /* ViewController.m */; };
+		FC688F601B7D4942003B46A9 /* FuzzDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F5F1B7D4942003B46A9 /* FuzzDataViewController.m */; };
 		FC688F631B7D4942003B46A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC688F611B7D4942003B46A9 /* Main.storyboard */; };
 		FC688F651B7D4942003B46A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC688F641B7D4942003B46A9 /* Images.xcassets */; };
 		FC688F681B7D4942003B46A9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC688F661B7D4942003B46A9 /* LaunchScreen.xib */; };
@@ -45,8 +45,8 @@
 		FC688F591B7D4942003B46A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC688F5B1B7D4942003B46A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FC688F5C1B7D4942003B46A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FC688F5E1B7D4942003B46A9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FC688F5F1B7D4942003B46A9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FC688F5E1B7D4942003B46A9 /* FuzzDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FuzzDataViewController.h; sourceTree = "<group>"; };
+		FC688F5F1B7D4942003B46A9 /* FuzzDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FuzzDataViewController.m; sourceTree = "<group>"; };
 		FC688F621B7D4942003B46A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC688F641B7D4942003B46A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FC688F671B7D4942003B46A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -134,15 +134,11 @@
 			children = (
 				FC688F871B7D4F92003B46A9 /* Models */,
 				FC688F911B7D5BA0003B46A9 /* Views */,
-				FC688F5B1B7D4942003B46A9 /* AppDelegate.h */,
-				FC688F5C1B7D4942003B46A9 /* AppDelegate.m */,
 				FC688F981B7D76A6003B46A9 /* View Controllers */,
 				FC688F611B7D4942003B46A9 /* Main.storyboard */,
 				FC688F641B7D4942003B46A9 /* Images.xcassets */,
 				FC688F661B7D4942003B46A9 /* LaunchScreen.xib */,
 				FC688F571B7D4942003B46A9 /* Supporting Files */,
-				FC688F801B7D4BA9003B46A9 /* FuzzDataManager.h */,
-				FC688F811B7D4BA9003B46A9 /* FuzzDataManager.m */,
 			);
 			path = FuzzStagingQuiz;
 			sourceTree = "<group>";
@@ -150,6 +146,8 @@
 		FC688F571B7D4942003B46A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FC688F5B1B7D4942003B46A9 /* AppDelegate.h */,
+				FC688F5C1B7D4942003B46A9 /* AppDelegate.m */,
 				FC688F581B7D4942003B46A9 /* Info.plist */,
 				FC688F591B7D4942003B46A9 /* main.m */,
 				FC688F7D1B7D4AB0003B46A9 /* Constants.h */,
@@ -178,6 +176,8 @@
 		FC688F871B7D4F92003B46A9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FC688F801B7D4BA9003B46A9 /* FuzzDataManager.h */,
+				FC688F811B7D4BA9003B46A9 /* FuzzDataManager.m */,
 				FC688F831B7D4F87003B46A9 /* FuzzData.h */,
 				FC688F841B7D4F87003B46A9 /* FuzzData.m */,
 				FC688F8B1B7D50DF003B46A9 /* FuzzImageData.h */,
@@ -202,8 +202,8 @@
 		FC688F981B7D76A6003B46A9 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FC688F5E1B7D4942003B46A9 /* ViewController.h */,
-				FC688F5F1B7D4942003B46A9 /* ViewController.m */,
+				FC688F5E1B7D4942003B46A9 /* FuzzDataViewController.h */,
+				FC688F5F1B7D4942003B46A9 /* FuzzDataViewController.m */,
 				FC688F991B7D76C3003B46A9 /* ImageViewController.h */,
 				FC688F9A1B7D76C3003B46A9 /* ImageViewController.m */,
 				FC688F9C1B7D793D003B46A9 /* WebViewController.h */,
@@ -347,7 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC688F601B7D4942003B46A9 /* ViewController.m in Sources */,
+				FC688F601B7D4942003B46A9 /* FuzzDataViewController.m in Sources */,
 				FC688F5D1B7D4942003B46A9 /* AppDelegate.m in Sources */,
 				FC688F971B7D5E49003B46A9 /* TextTableViewCell.m in Sources */,
 				FC688F821B7D4BA9003B46A9 /* FuzzDataManager.m in Sources */,
