@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D2633BADF3DE27A103298C10 /* libPods-FuzzStagingQuiz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E68B6918BF2B2C2FF6288097 /* libPods-FuzzStagingQuiz.a */; };
+		FC0DE2FD1B7D853500916908 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0DE2FC1B7D853500916908 /* Constants.m */; };
 		FC688F5A1B7D4942003B46A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F591B7D4942003B46A9 /* main.m */; };
 		FC688F5D1B7D4942003B46A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F5C1B7D4942003B46A9 /* AppDelegate.m */; };
 		FC688F601B7D4942003B46A9 /* FuzzDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F5F1B7D4942003B46A9 /* FuzzDataViewController.m */; };
@@ -15,7 +16,6 @@
 		FC688F651B7D4942003B46A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC688F641B7D4942003B46A9 /* Images.xcassets */; };
 		FC688F681B7D4942003B46A9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC688F661B7D4942003B46A9 /* LaunchScreen.xib */; };
 		FC688F741B7D4942003B46A9 /* FuzzStagingQuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F731B7D4942003B46A9 /* FuzzStagingQuizTests.m */; };
-		FC688F7F1B7D4AB0003B46A9 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F7E1B7D4AB0003B46A9 /* Constants.m */; };
 		FC688F821B7D4BA9003B46A9 /* FuzzDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F811B7D4BA9003B46A9 /* FuzzDataManager.m */; };
 		FC688F851B7D4F87003B46A9 /* FuzzData.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F841B7D4F87003B46A9 /* FuzzData.m */; };
 		FC688F8D1B7D50DF003B46A9 /* FuzzImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F8C1B7D50DF003B46A9 /* FuzzImageData.m */; };
@@ -40,6 +40,7 @@
 		89C427A3F71EFC63FFE0F5CE /* Pods-FuzzStagingQuiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuzzStagingQuiz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuzzStagingQuiz/Pods-FuzzStagingQuiz.debug.xcconfig"; sourceTree = "<group>"; };
 		D533E64DF41C23B464E08E3B /* Pods-FuzzStagingQuiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuzzStagingQuiz.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuzzStagingQuiz/Pods-FuzzStagingQuiz.release.xcconfig"; sourceTree = "<group>"; };
 		E68B6918BF2B2C2FF6288097 /* libPods-FuzzStagingQuiz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FuzzStagingQuiz.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC0DE2FC1B7D853500916908 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		FC688F541B7D4942003B46A9 /* FuzzStagingQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuzzStagingQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC688F581B7D4942003B46A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC688F591B7D4942003B46A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		FC688F721B7D4942003B46A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC688F731B7D4942003B46A9 /* FuzzStagingQuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FuzzStagingQuizTests.m; sourceTree = "<group>"; };
 		FC688F7D1B7D4AB0003B46A9 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		FC688F7E1B7D4AB0003B46A9 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		FC688F801B7D4BA9003B46A9 /* FuzzDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuzzDataManager.h; sourceTree = "<group>"; };
 		FC688F811B7D4BA9003B46A9 /* FuzzDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuzzDataManager.m; sourceTree = "<group>"; };
 		FC688F831B7D4F87003B46A9 /* FuzzData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuzzData.h; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 				FC688F581B7D4942003B46A9 /* Info.plist */,
 				FC688F591B7D4942003B46A9 /* main.m */,
 				FC688F7D1B7D4AB0003B46A9 /* Constants.h */,
-				FC688F7E1B7D4AB0003B46A9 /* Constants.m */,
+				FC0DE2FC1B7D853500916908 /* Constants.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -354,10 +354,10 @@
 				FC688F9B1B7D76C3003B46A9 /* ImageViewController.m in Sources */,
 				FC688F8D1B7D50DF003B46A9 /* FuzzImageData.m in Sources */,
 				FC688F941B7D5BC3003B46A9 /* ImageTableViewCell.m in Sources */,
+				FC0DE2FD1B7D853500916908 /* Constants.m in Sources */,
 				FC688F9E1B7D793D003B46A9 /* WebViewController.m in Sources */,
 				FC688F5A1B7D4942003B46A9 /* main.m in Sources */,
 				FC688F851B7D4F87003B46A9 /* FuzzData.m in Sources */,
-				FC688F7F1B7D4AB0003B46A9 /* Constants.m in Sources */,
 				FC688F901B7D5118003B46A9 /* FuzzTextData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
