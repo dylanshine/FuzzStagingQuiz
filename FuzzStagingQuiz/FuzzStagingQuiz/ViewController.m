@@ -13,6 +13,7 @@
 #import "TextTableViewCell.h"
 #import "FuzzImageData.h"
 #import "FuzzTextData.h"
+#import "ImageViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
@@ -81,6 +82,23 @@
         TextTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"textCell" forIndexPath:indexPath];
         cell.textData = fuzzText;
         return cell;
+    }
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if ([self.displayedData[indexPath.row]isKindOfClass:[FuzzImageData class]]) {
+        [self performSegueWithIdentifier:@"imageSegue" sender:self];
+    }
+}
+
+#pragma mark - Prepare for seque
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"imageSegue"]) {
+        ImageViewController *destination = segue.destinationViewController;
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        FuzzImageData *fuzzImage = self.displayedData[indexPath.row];
+        destination.imageData = fuzzImage;
     }
 }
 

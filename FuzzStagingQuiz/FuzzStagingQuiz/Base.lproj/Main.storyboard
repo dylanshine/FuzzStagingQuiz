@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="79" width="600" height="521"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="imageCell" rowHeight="160" id="dmU-L7-fNO" customClass="ImageTableViewCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="imageCell" rowHeight="160" id="dmU-L7-fNO" customClass="ImageTableViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dmU-L7-fNO" id="puI-BZ-HW7">
@@ -61,7 +61,7 @@
                                             <outlet property="spinner" destination="ogp-hy-nQC" id="Tdj-hX-j00"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="textCell" rowHeight="57" id="2sh-dx-wqU" customClass="TextTableViewCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="textCell" rowHeight="57" id="2sh-dx-wqU" customClass="TextTableViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2sh-dx-wqU" id="dCO-S8-j1R">
@@ -124,10 +124,50 @@
                     <connections>
                         <outlet property="segmentedControl" destination="SbO-B3-z8C" id="3s5-qE-u9r"/>
                         <outlet property="tableView" destination="nPY-gR-NFm" id="pXO-i2-q0c"/>
+                        <segue destination="fBL-hm-Sog" kind="presentation" identifier="imageSegue" modalTransitionStyle="crossDissolve" id="FkR-ZU-Y5N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="Sy6-pZ-9Dh">
+            <objects>
+                <viewController id="fBL-hm-Sog" customClass="ImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0wz-Pr-Kix"/>
+                        <viewControllerLayoutGuide type="bottom" id="mIf-iq-Mvm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vzb-oa-dbV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hsH-Za-8Ip">
+                                <rect key="frame" x="16" y="0.0" width="568" height="600"/>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="PYr-kL-jsc">
+                                <rect key="frame" x="282" y="281" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hsH-Za-8Ip" firstAttribute="trailing" secondItem="Vzb-oa-dbV" secondAttribute="trailingMargin" id="2aL-8Q-8Nf"/>
+                            <constraint firstItem="hsH-Za-8Ip" firstAttribute="leading" secondItem="Vzb-oa-dbV" secondAttribute="leadingMargin" id="EhT-Tp-668"/>
+                            <constraint firstItem="mIf-iq-Mvm" firstAttribute="top" secondItem="hsH-Za-8Ip" secondAttribute="bottom" id="HMg-Eb-1FD"/>
+                            <constraint firstAttribute="centerY" secondItem="PYr-kL-jsc" secondAttribute="centerY" id="KCF-R4-pAl"/>
+                            <constraint firstItem="hsH-Za-8Ip" firstAttribute="top" secondItem="Vzb-oa-dbV" secondAttribute="topMargin" id="aYQ-n2-ZBx"/>
+                            <constraint firstAttribute="centerX" secondItem="PYr-kL-jsc" secondAttribute="centerX" id="jxn-qX-9HX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="hsH-Za-8Ip" id="dkI-IC-NDz"/>
+                        <outlet property="spinner" destination="PYr-kL-jsc" id="8gt-WQ-0Mg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tKh-bq-Gtg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1357" y="286"/>
         </scene>
     </scenes>
 </document>

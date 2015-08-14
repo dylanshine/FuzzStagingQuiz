@@ -22,6 +22,7 @@
 		FC688F901B7D5118003B46A9 /* FuzzTextData.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F8F1B7D5118003B46A9 /* FuzzTextData.m */; };
 		FC688F941B7D5BC3003B46A9 /* ImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F931B7D5BC3003B46A9 /* ImageTableViewCell.m */; };
 		FC688F971B7D5E49003B46A9 /* TextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F961B7D5E49003B46A9 /* TextTableViewCell.m */; };
+		FC688F9B1B7D76C3003B46A9 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC688F9A1B7D76C3003B46A9 /* ImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		FC688F931B7D5BC3003B46A9 /* ImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTableViewCell.m; sourceTree = "<group>"; };
 		FC688F951B7D5E49003B46A9 /* TextTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextTableViewCell.h; sourceTree = "<group>"; };
 		FC688F961B7D5E49003B46A9 /* TextTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextTableViewCell.m; sourceTree = "<group>"; };
+		FC688F991B7D76C3003B46A9 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		FC688F9A1B7D76C3003B46A9 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,8 +133,7 @@
 				FC688F911B7D5BA0003B46A9 /* Views */,
 				FC688F5B1B7D4942003B46A9 /* AppDelegate.h */,
 				FC688F5C1B7D4942003B46A9 /* AppDelegate.m */,
-				FC688F5E1B7D4942003B46A9 /* ViewController.h */,
-				FC688F5F1B7D4942003B46A9 /* ViewController.m */,
+				FC688F981B7D76A6003B46A9 /* View Controllers */,
 				FC688F611B7D4942003B46A9 /* Main.storyboard */,
 				FC688F641B7D4942003B46A9 /* Images.xcassets */,
 				FC688F661B7D4942003B46A9 /* LaunchScreen.xib */,
@@ -192,6 +194,17 @@
 				FC688F961B7D5E49003B46A9 /* TextTableViewCell.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		FC688F981B7D76A6003B46A9 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC688F5E1B7D4942003B46A9 /* ViewController.h */,
+				FC688F5F1B7D4942003B46A9 /* ViewController.m */,
+				FC688F991B7D76C3003B46A9 /* ImageViewController.h */,
+				FC688F9A1B7D76C3003B46A9 /* ImageViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +346,7 @@
 				FC688F5D1B7D4942003B46A9 /* AppDelegate.m in Sources */,
 				FC688F971B7D5E49003B46A9 /* TextTableViewCell.m in Sources */,
 				FC688F821B7D4BA9003B46A9 /* FuzzDataManager.m in Sources */,
+				FC688F9B1B7D76C3003B46A9 /* ImageViewController.m in Sources */,
 				FC688F8D1B7D50DF003B46A9 /* FuzzImageData.m in Sources */,
 				FC688F941B7D5BC3003B46A9 /* ImageTableViewCell.m in Sources */,
 				FC688F5A1B7D4942003B46A9 /* main.m in Sources */,
