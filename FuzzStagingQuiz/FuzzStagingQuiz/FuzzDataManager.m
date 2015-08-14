@@ -59,6 +59,7 @@
             }
         }
     }
+    [self sortDataByDate];
 }
 
 -(BOOL)dataCheck:(NSDictionary *)dataDict {
@@ -66,6 +67,11 @@
         return NO;
     }
     return YES;
+}
+
+-(void)sortDataByDate {
+    NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:NO];
+    self.data = [[self.data sortedArrayUsingDescriptors:@[descriptor]] mutableCopy];
 }
 
 #pragma mark - Data Filtering
