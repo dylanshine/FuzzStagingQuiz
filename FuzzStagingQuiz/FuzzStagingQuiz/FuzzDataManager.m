@@ -47,14 +47,25 @@
 
 -(void)createFuzzDataObjects:(NSArray *)responseData {
     for (NSDictionary *dataDict in responseData) {
-        if ([dataDict[@"type"] isEqualToString:@"image"]) {
-            FuzzImageData *fuzzImage = [[FuzzImageData alloc] initWithDictionary:dataDict];
-            [self.data addObject:fuzzImage];
-        } else {
-            FuzzTextData *fuzzText = [[FuzzTextData alloc] initWithDictionary:dataDict];
-            [self.data addObject:fuzzText];
+        if ([self dataCheck:dataDict]) {
+            if ([dataDict[@"type"] isEqualToString:@"image"]) {
+                FuzzImageData *fuzzImage = [[FuzzImageData alloc] initWithDictionary:dataDict];
+                if (fuzzImage.imageURL) {
+                    [self.data addObject:fuzzImage];
+                }
+            } else {
+                FuzzTextData *fuzzText = [[FuzzTextData alloc] initWithDictionary:dataDict];
+                [self.data addObject:fuzzText];
+            }
         }
     }
+}
+
+-(BOOL)dataCheck:(NSDictionary *)dataDict {
+    if (!dataDict[@"data"] || [dataDict[@"data"] length] == 0 || [dataDict[@"data"] isEqualToString:@"Nothing"]) {
+        return NO;
+    }
+    return YES;
 }
 
 #pragma mark - Data Filtering
