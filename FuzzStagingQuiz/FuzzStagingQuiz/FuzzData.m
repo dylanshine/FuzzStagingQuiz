@@ -14,6 +14,7 @@
     if (self = [super init]) {
         _identifier = responseDict[@"id"];
         _date = [self convertFuzzDate:responseDict[@"date"]];
+        _formattedDate = [self checkDate:responseDict[@"date"]];
     }
     return self;
 }
@@ -23,6 +24,13 @@
     [dateFormatter setDateFormat:@"MM-dd-yyyy"];
     NSDate *date = [dateFormatter dateFromString:responseDateString];
     return date;
+}
+
+-(NSString *)checkDate:(NSString *)dateString {
+    if ([dateString length] == 0) {
+        return @"Not Available";
+    }
+    return dateString;
 }
 
 @end

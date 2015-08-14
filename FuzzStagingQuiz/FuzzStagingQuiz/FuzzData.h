@@ -11,5 +11,6 @@
 @interface FuzzData : NSObject
 @property (nonatomic, strong) NSString *identifier;
 @property (nonatomic, strong) NSDate *date;
+@property (nonatomic, strong) NSString *formattedDate;
 -(instancetype)initWithDictionary:(NSDictionary *)responseDict;
 @end
