@@ -27,31 +27,38 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dmU-L7-fNO" id="puI-BZ-HW7">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EYp-1d-gHu">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="140"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="140" id="u7I-Fe-wa1"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01/01/2001" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSj-fc-xCY">
                                                     <rect key="frame" x="504" y="138" width="88" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ogp-hy-nQC">
+                                                    <rect key="frame" x="290" y="60" width="20" height="20"/>
+                                                    <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </activityIndicatorView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EYp-1d-gHu">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="140"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="140" id="u7I-Fe-wa1"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="SSj-fc-xCY" firstAttribute="trailing" secondItem="puI-BZ-HW7" secondAttribute="trailingMargin" id="3Qk-OD-enJ"/>
+                                                <constraint firstAttribute="centerX" secondItem="ogp-hy-nQC" secondAttribute="centerX" id="4rb-yM-gHS"/>
                                                 <constraint firstItem="EYp-1d-gHu" firstAttribute="top" secondItem="puI-BZ-HW7" secondAttribute="topMargin" constant="-8" id="8RC-X4-CIA"/>
                                                 <constraint firstItem="SSj-fc-xCY" firstAttribute="top" secondItem="EYp-1d-gHu" secondAttribute="bottom" constant="-2" id="9ae-lP-oxW"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="SSj-fc-xCY" secondAttribute="bottom" constant="-7.5" id="nrj-tr-BrG"/>
                                                 <constraint firstItem="EYp-1d-gHu" firstAttribute="leading" secondItem="puI-BZ-HW7" secondAttribute="leadingMargin" constant="-8" id="nwH-vX-E4Z"/>
+                                                <constraint firstAttribute="centerY" secondItem="ogp-hy-nQC" secondAttribute="centerY" constant="9.75" id="rWG-0T-kUZ"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="EYp-1d-gHu" secondAttribute="trailing" constant="-8" id="zGb-GU-Hsc"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="dateLabel" destination="SSj-fc-xCY" id="2oU-7p-Xy7"/>
                                             <outlet property="fuzzImageView" destination="EYp-1d-gHu" id="7oV-QC-vUJ"/>
+                                            <outlet property="spinner" destination="ogp-hy-nQC" id="Tdj-hX-j00"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="textCell" rowHeight="57" id="2sh-dx-wqU" customClass="TextTableViewCell">
