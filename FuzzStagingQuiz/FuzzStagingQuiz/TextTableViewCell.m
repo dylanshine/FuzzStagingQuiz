@@ -15,4 +15,10 @@
 
 @implementation TextTableViewCell
 
+-(void)setTextData:(FuzzTextData *)textData {
+    _textData = textData;
+    self.fuzzTextLabel.text = textData.text;
+    self.dateLabel.text = textData.formattedDate;
+}
+
 @end
